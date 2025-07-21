@@ -120,10 +120,6 @@ const Home = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  onError={(e) => {
-                    e.target.src = "/images/placeholder-product.jpg"
-                    e.target.onerror = null
-                  }}
                 />
                 <div className="absolute top-4 left-4 bg-[#FB5FAB] text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Прозорци
@@ -150,10 +146,6 @@ const Home = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  onError={(e) => {
-                    e.target.src = "/images/placeholder-product.jpg"
-                    e.target.onerror = null
-                  }}
                 />
                 <div className="absolute top-4 left-4 bg-[#FB5FAB] text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Врати
@@ -180,10 +172,6 @@ const Home = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  onError={(e) => {
-                    e.target.src = "/images/placeholder-product.jpg"
-                    e.target.onerror = null
-                  }}
                 />
                 <div className="absolute top-4 left-4 bg-[#FB5FAB] text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Щори
@@ -191,7 +179,7 @@ const Home = () => {
               </div>
               <div className="p-6 text-center">
                 <Link
-                  href="/catalog?tab=shutters"
+                  href="/contacts"
                   className="mt-4 inline-block text-[#FB5FAB] font-semibold hover:text-pink-800 transition-colors"
                 >
                   Научете повече, когато бъдат достъпни →

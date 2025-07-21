@@ -133,10 +133,6 @@ const Product = ({ id }: ProductProps) => {
                       isImageLoading ? "opacity-50" : "opacity-100"
                     }`}
                     onLoad={handleImageLoad}
-                    onError={(e) => {
-                      e.target.src = "/images/placeholder-product.jpg"
-                      setIsImageLoading(false)
-                    }}
                     priority
                   />
                 )}
@@ -186,9 +182,6 @@ const Product = ({ id }: ProductProps) => {
                       width={80}
                       height={80}
                       className="w-full h-full object-cover rounded"
-                      onError={(e) => {
-                        e.target.src = "/images/placeholder-product.jpg"
-                      }}
                     />
                   </div>
                 ))}

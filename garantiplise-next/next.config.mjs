@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // output: 'export', // Уверете се, че този ред е премахнат или коментиран
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -18,7 +19,7 @@ const nextConfig = {
         hostname: 'garantiplise.com',
       },
     ],
-    unoptimized: true,
+    // unoptimized: true, // Можете да премахнете този ред, за да използвате Next.js Image Optimization
   },
 }
 
